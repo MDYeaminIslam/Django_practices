@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/recent.css' %}">
+    <title>Django form</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <!-- Taking input from form as paragraph -->
+        <!-- When we use post method then we have to use csrf token
+        {% csrf_token %} and this will help us secure our info
+        {{from.as_p}} -->
+        {% csrf_token %}
+        {{from.as_p}}
+        
+        <input type="submit" value="submit">
+        <!-- <hr>
+        <div>
+            Manually calling the form fields
+            {{from.email.label_tag}}
+            {{from.email}}
+
+            {{from.laptop.label_tag}}
+            {{from.laptop}}
+
+            {{from.mobile.label_tag}}
+            {{from.mobile}}
+        </div>
+        If we want to call all the fields in the form and don't want to call them manually then we can use then we can use loop here.
+
+        <hr>
+        {% for field in from %}
+        {{field.label_tag}}
+        {{field}} <br><br>
+
+        {% endfor %} -->
+
+
+
+    </form>
+</body>
+</html>

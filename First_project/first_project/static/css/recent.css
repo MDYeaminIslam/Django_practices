@@ -1,0 +1,38 @@
+body{
+    background-color: aquamarine;
+}
+form{
+    border: 5px solid rebeccapurple;
+    padding: 10px;
+}
+/* If we forget which tag we should take than simply right click on the web page and check the source code . It'll help to find the tag. */
+label{
+    color: brown;
+    font-size: 25px;
+    font-weight: 200;
+}
+/* increasing the size of the input box */
+input{
+    width: 250px;
+    background-color: black;
+    color: white;
+}
+
+/* decreasing the distance between check box and the label */
+#checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+#youtube_channel{
+    width: 20px;
+    height: 20px;
+}
+.errorlist{
+    color: red;
+    list-style: square;
+}
+textarea{
+    background-color: black;
+    color: white;
+}
